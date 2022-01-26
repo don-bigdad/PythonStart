@@ -65,3 +65,9 @@ print(sum(a[0]) + sum(a[1]) + sum(a[2]) + sum(a[3]))
 m = list(input())
 m.reverse()
 print(m)
+#С помощью циклов вывести на экран все простые числа от 1 до 100.
+for num in range(2,101):
+    if num%num==0 and num%2!=0 and num%3!=0 and num%4!=0 and num%5!=0 and num%6!=0 and num%7!=0 and num%8!=0 and num%9!=0:
+        print("prime number",num)
+    else:
+        print("not prime number",num)
