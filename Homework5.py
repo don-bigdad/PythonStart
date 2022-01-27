@@ -67,3 +67,14 @@ for num in range(2,101):
         print("prime number",num)
     else:
         print("not prime number",num)
+#Выведите на экран «песочные часы», максимальная ширина которых считывается с 
+#клавиатуры (число нечетное). В примере ширина равна 5.
+N=int(input())
+i=0
+for j in range(N,0,-2):
+    print(i*" " + j * "*")
+    i+=1
+i-=2
+for j in range(3,N+1,+2):
+    print(i* " "+j*"*")
+    i-=1
