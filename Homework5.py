@@ -1,8 +1,6 @@
 # Выведите на экран все числа в диапазоне от 1 до 100 кратные 7.
 for i in range(1, 101):
-    if i % 7:
-        pass
-    else:
+    if i % 7==0:
         print(i)
 # факториал числа
 n = int(input())
@@ -24,8 +22,6 @@ count = 0
 for i in list_1:
     if i % 2:
         count += 1
-    else:
-        pass
 print(count)
 # список случайных чисел
 import random
