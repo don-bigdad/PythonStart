@@ -40,13 +40,16 @@ for i in n:
 print(sum)
 n=input()
 # скрипт для удаления тегов
-# <p> <b> Для длинных цитат браузер вставляет </b> отступы со всех сторон. </b>
-# можно вставлять любой тег.единственное должны быть разделены пробелами
-N=input("which teg you want to delete")
+n=input()
 n=n.split()
-while N in n:
-    for element in (n):
-        if element==N:
-            n.remove(N)
+# <p> <b> Для длинных цитат браузер вставляет </b> отступы со всех сторон. </b> ( рабочий пример пример)
+# можно вставлять любой тег.единственное, должны быть разделены пробелами
+number=int(input("input how many teg you want to delete"))
+for _ in range(number):
+    N=input("which teg you want to delete")
+    while N in n:
+        for element in (n):
+            if element==N:
+                n.remove(N)
 n=" ".join(n)
 print(n)
