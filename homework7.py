@@ -38,3 +38,15 @@ sum = 0
 for i in n:
     sum += ord(i)
 print(sum)
+n=input()
+# скрипт для удаления тегов
+# <p> <b> Для длинных цитат браузер вставляет </b> отступы со всех сторон. </b>
+# можно вставлять любой тег.единственное должны быть разделены пробелами
+N=input("which teg you want to delete")
+n=n.split()
+while N in n:
+    for element in (n):
+        if element==N:
+            n.remove(N)
+n=" ".join(n)
+print(n)
