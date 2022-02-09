@@ -16,7 +16,7 @@ cat={
 # выглядит, как: «H» - 1 , «e» - 1, «l» - 3 и т. д.
 n=input()
 for item in (n):
-    print(n.count(item))
+    print(item,n.count(item))
 #все что смог не могу разобраться и вывести 14,24,,34,44...
 dict={"X":10,"I":1,"IV":4,"V":5,"IX":9,"XL":40,"L":50,"XC":90,"C":100}
 n=input()
