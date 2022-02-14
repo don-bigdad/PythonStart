@@ -72,12 +72,14 @@ for element in range(999, 100, -1):
             str1 = len(multiply) // 2
             s2 = multiply[::-1]
             if multiply[:str1] == s2[:str1]:
+                value1=item
+                value2=element
                 max_value = int(multiply)
             else:
                 continue
         else:
             break
-print(max_value)
+print(value1,"*",value2,"=",max_value)
 # Существуют такие последовательности чисел:
 # 0,2,4,6,8,10,12
 # 1,4,7,10,13
