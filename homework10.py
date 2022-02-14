@@ -91,30 +91,32 @@ print(value1,"*",value2,"=",max_value)
 # пользователь вводит с клавиатуры в виде строки. Например, пользователь
 # вводит строку 0,5,10,15,20,25 и ответом программы должно быть число 30.
 import math
+def progression(n):
+    q,q1,q2=(0,0,0)
+    degree2=2
+    degree3=3
+    while q!=n[0]:
+        q+=1
+    while q1!=n[1]:
+        q1+=1
+    while q2!=n[2]:
+        q2+=1
+    if q2-q1==q1-q:
+        Q=q1-q
+        n.append(n[-1]+Q)
+    elif q2**0.5==q1:
+        #случай квадратичной прогресии
+        n.append(q1**(len(n)))
+    elif n[1]==2**degree2 and n[2]==3**degree2 :
+        #квадраты чисел
+        k=n[-1]**0.5
+        k=int(k+1)
+        n.append(k**2)
+    elif n[1]==2**degree3 and n[2]==3**degree3 :
+        #кубы чисел
+        k=n[-1]**(1/3)
+        k=int(k+1)
+        n.append(k**3)
+    return n
 n=list(map(int,input().split(",")))
-q,q1,q2=(0,0,0)
-degree2=2
-degree3=3
-while q!=n[0]:
-    q+=1
-while q1!=n[1]:
-    q1+=1
-while q2!=n[2]:
-    q2+=1
-if q2-q1==q1-q:
-    Q=q1-q
-    n.append(n[-1]+Q)
-elif q2**0.5==q1:
-    #случай квадратичной прогресии
-    n.append(q1**(len(n)))
-elif n[1]==2**degree2 and n[2]==3**degree2 :
-    #квадраты чисел
-    k=n[-1]**0.5
-    k=int(k+1)
-    n.append(k**2)
-elif n[1]==2**degree3 and n[2]==3**degree3 :
-    #кубы чисел
-    k=n[-1]**(1/3)
-    k=int(k+1)
-    n.append(k**3)
-print(n)
+print(progression(n))
