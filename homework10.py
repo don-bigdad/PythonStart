@@ -35,18 +35,17 @@ rectangle(height,width)
 # Напишите функцию, которая реализует линейный поиск элемента в
 # списке целых чисел. Если такой элемент в списке есть, то верните его
 # индекс, если нет, то верните число «-1».
-def find_element(list):
+import random
+
+def find_element(list,n):
     if n in list:
         print("element in list,his index",list.index(n))
     else:
         print("-1")
-        return
-list=[random.randint(1,50) for _ in range(20)]
+    return list,n
+list=[random.randint(10,30) for _ in range(20)]
 n=int(input())
-#examination
-print(list)
-print(n)
-find_element(list)
+print(find_element(list,n))
 #Напишите функцию, которая вернет количество слов в строке текста.
 def count (str):
     str=str.split()
