@@ -68,8 +68,6 @@ for element in range(999, 100, -1):
     for item in range(999, 100, -1):
         multiply = item * element
         if multiply > max_value:
-            value1=item
-            value2=element
             multiply = str(multiply)
             str1 = len(multiply) // 2
             s2 = multiply[::-1]
@@ -79,7 +77,7 @@ for element in range(999, 100, -1):
                 continue
         else:
             break
-print(value1,"*",value2,"=",max_value)
+print(max_value)
 # Существуют такие последовательности чисел:
 # 0,2,4,6,8,10,12
 # 1,4,7,10,13
